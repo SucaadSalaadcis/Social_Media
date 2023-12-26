@@ -34,7 +34,7 @@ function Form() {
   return ( <div>
       <button onClick={handleIsOpen} className='w-[60px] rounded-full pb-4 h-[60px] bg-purple-600 text-white text-5xl fixed right-4 bottom-4 '> + </button>
 <div style={{ display: isOpen === true ? "block" : "none"}} className='bg-purple-500
- px-10 pb-10 md:mx-[30%] rounded mt-6 absolute hidden'>
+ px-10 pb-10 md:mx-[30%] mt-20 rounded md:mt-6 absolute hidden'>
 
 <i onClick={handleClose} class="fa-solid ml-[470px] text-white text-4xl fa-xmark"></i>
     <form >
