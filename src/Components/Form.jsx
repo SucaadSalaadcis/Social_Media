@@ -34,15 +34,15 @@ function Form() {
   return ( <div>
       <button onClick={handleIsOpen} className='w-[60px] rounded-full pb-4 h-[60px] bg-purple-600 text-white text-5xl fixed right-4 bottom-4 '> + </button>
 <div style={{ display: isOpen === true ? "block" : "none"}} className='bg-purple-500
- px-10 pb-10 md:mx-[30%] mt-20 mx-14 rounded md:mt-15 absolute hidden w-[80%] md:w-[37%]'>
+ px-10 pb-10 md:mx-[30%] mt-20 mx-10 rounded md:mt-15 absolute hidden w-[80%] md:w-[37%]'>
 
-<i onClick={handleClose} class="fa-solid md:ml-[470px] ml-[380px] text-white md:text-4xl fa-xmark"></i>
+<i onClick={handleClose} class="fa-solid md:ml-[470px] ml-[240px] text-white md:text-4xl fa-xmark"></i>
     <form >
-       <input value={title} onChange={(event) =>{setTitle(event.target.value);}}className='h-[50px] w-[300px] ' type="text"  placeholder='Enter title'/>
+       <input value={title} onChange={(event) =>{setTitle(event.target.value);}}className='h-[50px] md:w-[300px] w-[230px] ' type="text"  placeholder='Enter title'/>
          <br/>
          <input ref={imageRef} 
          onChange={(e)=>{setImage(e.target.files[0]);}}
-    className='mt-5 file:bg-yellow-500 file:border-0 file:p-3 file:rounded' type="file"/>
+         className='mt-5 file:bg-yellow-500 file:border-0 file:p-3 file:rounded' type="file"/>
     <br/>
      <button onClick={handlePost} className='bg-white mt-10 px-10 text-3xl py-2 rounded-xl hover:bg-purple-200 '>Post</button>
     </form>
